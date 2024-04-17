@@ -45,11 +45,11 @@ header {
   gap: 48px;
 
   padding: 12px;
-  width: 1300px;
+  width: 100%;
 }
 
 .logo-area {
-  width: 235px;
+  width: 175px;
   left: 0;
   display: flex;
   flex-direction: column;
@@ -58,8 +58,8 @@ header {
 }
 
 .logo-area img {
-  width: 150px;
-  height: 75px;
+  object-fit: contain;
+  width: 100%;
 }
 
 .logo-area p {
@@ -247,9 +247,10 @@ span {
 
 .tags {
   padding: 4px 6px;
-  background-color: #343a40;
+  background-color: #339af0;
   color: #fff;
   font-size: 16px;
+  object-fit: contain;
 }
 
 /* FOOTER */
@@ -265,12 +266,112 @@ span {
 
 .end-text p {
   font-weight: 400;
+  text-align: center;
 }
 
 footer {
   background-color: #343a40;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.copyright {
+  margin-top: 12px;
+  font-size: 16px;
+}
+
+footer .newsletter-signup {
+  margin-top: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+  .header-links {
+    display: block;
+    gap: 1px;
+    width: 65%;
+  }
+  .toolbar-links:link,
+  .toolbar-links:visited {
+    padding: 2px 4px;
+    letter-spacing: 1.7px;
+    line-height: 1.7;
+  }
+  .logo-area {
+    width: 35%;
+  }
+
+  .logo-area p {
+    display: none;
+  }
+  header .newsletter-signup {
+    display: none;
+  }
+  .body-container {
+    width: 100%;
+    margin-top: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  .title-container {
+    padding: 12px;
+  }
+
+  .title {
+    font-size: 44px;
+  }
+  .intro-p {
+    width: 100%;
+    padding: 4px;
+  }
+  .main-article {
+    width: 100%;
+  }
+  .main-article h3 {
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: 4px;
+  }
+  .main-article p {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+  .main-article img {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+  .main-image {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .tag-line {
+    gap: 6px;
+    margin: 16px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+  .tags {
+    width: fit-content;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .end-text p {
+    content: "Get Updates When New Articles Come Out!";
+  }
 }

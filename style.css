@@ -49,7 +49,7 @@ header {
 }
 
 .logo-area {
-  width: 235px;
+  width: 175px;
   left: 0;
   display: flex;
   flex-direction: column;
@@ -58,8 +58,8 @@ header {
 }
 
 .logo-area img {
-  width: 150px;
-  height: 75px;
+  object-fit: contain;
+  width: 100%;
 }
 
 .logo-area p {
@@ -171,7 +171,7 @@ span {
 .body-container h2 {
   color: #d6741c;
   font-weight: 1000;
-  margin: 12px;
+  margin-bottom: 24px;
   letter-spacing: 1.7px;
 }
 
@@ -227,18 +227,86 @@ span {
   bottom: 0;
   left: 0;
   color: #fff;
-  margin-top: 24px;
   margin-bottom: 24px;
 }
 
 .end-text p {
   font-weight: 400;
+  text-align: center;
 }
 
 footer {
   background-color: #343a40;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.copyright {
+  margin-top: 12px;
+  font-size: 16px;
+}
+
+footer .newsletter-signup {
+  margin-top: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+  .header-links {
+    display: block;
+    gap: 1px;
+    width: 65%;
+  }
+  .toolbar-links:link,
+  .toolbar-links:visited {
+    padding: 2px 4px;
+    letter-spacing: 1.7px;
+    line-height: 1.7;
+  }
+  .logo-area {
+    width: 35%;
+  }
+
+  .logo-area p {
+    display: none;
+  }
+  header .newsletter-signup {
+    display: none;
+  }
+  .body-container {
+    width: 100%;
+    margin-top: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  .body-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr;
+    column-gap: 0;
+    row-gap: 24px;
+  }
+
+  .article-card .article-title {
+    margin: 0;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  .article-card p {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  .main-article {
+    width: 100%;
+  }
+
+  .end-text p {
+    content: "Get Updates When New Articles Come Out!";
+  }
 }
