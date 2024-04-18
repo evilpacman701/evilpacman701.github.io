@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      WNBA Athlete Caitlin Clark’s Salary Leaked, Spark Fans Upset and Aiming to
+      Boycott
+    </title>
+    <link rel="icon" href="../Images/S-modified.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="article-style.css" />
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1454912933066241"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo-area">
+          <img src="Logo.png" alt="Site Logo" />
+          <p>Entertainment News and More.</p>
+        </div>
+        <div class="header-links">
+          <a href="../index.html" class="toolbar-links">Home</a>
+          <a href="../GamingPage.html" class="toolbar-links">Gaming</a>
+          <a href="../TVPage.html" class="toolbar-links">TV</a>
+          <a href="../MoviePage.html" class="toolbar-links">Movies</a>
+          <a href="../CulturePage.html" class="toolbar-links current-link"
+            >Culture</a
+          >
+        </div>
+      </div>
+    </header>
+    <div class="body-container">
+      <div class="title-container">
+        <h1 class="title">
+          WNBA Athlete Caitlin Clark’s Salary Leaked, Spark Fans Upset and
+          Aiming to Boycott
+        </h1>
+        <p class="intro-p">
+          On April 15th the details of WNBA player Caitlin Clark contract was
+          leaked on X sparking a huge upset over the salaries the WNBA players
+          are paid compared to their NBA counterparts. The contract starts at
+          $76,535 in 2024 and grows to $97,582 in 2027. This salary is
+          absolutely dwarfed by any NBA rookie entering the league with averages
+          at a whopping $10.1 million reported by Fox Sports.
+        </p>
+      </div>
+      <article class="main-article">
+        <img
+          src="../Images/Article-Images/WNBA/CaitlynClarkContract.png"
+          alt="Caitlyn Clark Contract yearly"
+          class="main-image"
+        />
+        <p>
+          Since the leak many twitter users have been outraged by the vast
+          difference in pay pitted against those that are defending the WNBA.
+          Many say the salaries are for good reason because the WNBA is simply
+          not at the same level as the NBA. The NBA reported a total revenue
+          from the 2022/23 season amounting to 10.58 billion dollars - while the
+          WNBA has had an average of a $10 million net loss (revenue costs) per
+          year since it was founded in 1996.
+        </p>
+        <p>
+          This feels like a great time to watch the famous Bill Burr bit which
+          calls out that even the people clamoring for equality in the space
+          aren’t even watching WNBA games and can’t name more than one player.
+          The reason for the huge difference is simple - WNBA does not have
+          viewership or ticket sales to afford larger salaries for their
+          players.
+        </p>
+        <img
+          src="../Images/Article-Images/WNBA/JoePTweet.png"
+          alt=""
+          class="article-image"
+        />
+        <p>
+          Since the outrage there has been good news for Caitlyn Clark, she
+          recently landed a huge signature shoe deal with Nike, reportedly
+          amounting over $20 million.
+        </p>
+
+        <p>
+          Hopefully, this news will open up brand deals for more WNBA players to
+          add to their income. And at least now if someone asks you to name a
+          WNBA player we can all say “Caitlin Clark”.
+        </p>
+      </article>
+      <div class="tag-line">
+        <p class="tags">Sports</p>
+        <p class="tags">Basketball</p>
+        <p class="tags">WNBA</p>
+        <p class="tags">NBA</p>
+        <p class="tags">CaitlynClark</p>
+        <p class="tags">Culture</p>
+      </div>
+    </div>
+
+    <footer>
+      <div class="newsletter-signup">
+        <p class="join-text">Subscribe to Our Newsletter!</p>
+        <form name="submit-to-google-sheet">
+          <input
+            type="email"
+            name="Email"
+            placeholder="Your email here"
+            required
+          />
+          <button type="submit" class="button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="mail-icon"
+            >
+              <path
+                d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z"
+              />
+              <path
+                d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z"
+              />
+            </svg>
+          </button>
+        </form>
+        <span id="msg"></span>
+      </div>
+      <div class="end-text">
+        <p>Get Updates When New Articles Come Out!</p>
+        <p class="copyright">© Screen-Pulse.com 2024, All rights reserved</p>
+      </div>
+    </footer>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxDdjNQyhixof_HGmzGd06Og-1CMVxD8oAt5xx0AR8Pu3Y-3LywnDh4NkiAOSe3e-WV/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Thank You For Subscribing!";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
