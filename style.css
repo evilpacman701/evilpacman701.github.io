@@ -185,10 +185,11 @@ span {
 
 /* GENERAL CARD SETTINGS */
 
-.article-card a {
+.article-card a:link,
+.article-card a:visited {
   text-decoration: none;
+  color: #343a40;
 }
-
 .article-card img {
   width: 100%;
   height: auto;
@@ -286,7 +287,7 @@ footer .newsletter-signup {
   }
   .body-grid {
     grid-template-columns: 1fr;
-    grid-template-rows: 4fr;
+    grid-template-rows: 302px;
     column-gap: 0;
     row-gap: 24px;
   }
@@ -295,6 +296,7 @@ footer .newsletter-signup {
     margin: 0;
     margin-left: 12px;
     margin-right: 12px;
+    margin-bottom: 4px;
   }
 
   .article-card p {
