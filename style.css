@@ -244,7 +244,7 @@ footer {
   align-items: center;
 }
 
-.copyright {
+.end-text .copyright {
   margin-top: 12px;
   font-size: 16px;
 }
@@ -304,9 +304,5 @@ footer .newsletter-signup {
 
   .main-article {
     width: 100%;
-  }
-
-  .end-text p {
-    content: "Get Updates When New Articles Come Out!";
   }
 }
